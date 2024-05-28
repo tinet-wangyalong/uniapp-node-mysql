@@ -1,22 +1,49 @@
 {
+  "entryPagePath": "pages/index/index",
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/about/about"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarBackgroundColor": "#FF0000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小白的小程序",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#0000FF",
+    "selectedColor": "#FF0000",
+    "borderStyle": "white",
+    "backgroundColor": "#00FF00",
+    "position": "bottom",
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "/img/front.png",
+        "selectedIconPath": "/img/front-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "profile",
+        "iconPath": "/img/mine.png",
+        "selectedIconPath": "/img/mine-active.png"
+      }
+    ]
   },
   "style": "v2",
-  "renderer": "skyline",
-  "rendererOptions": {
-    "skyline": {
-      "defaultDisplayBlock": true,
-      "disableABTest": true,
-      "sdkVersionBegin": "3.0.0",
-      "sdkVersionEnd": "15.255.255"
+  "networkTimeOut": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于给您提供更精准的服务"
     }
   },
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "sitemapLocation": "sitemap.json"
 }

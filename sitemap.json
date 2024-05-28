@@ -1,7 +1,21 @@
 {
-    "desc": "关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html",
-    "rules": [{
-    "action": "allow",
-    "page": "*"
-    }]
+    "desc": "收录配置",
+    "rules": [
+        {
+            "page": "pages/index/index",
+            "action": "allow",
+            "priority": 2
+        },
+        {
+            "page": "pages/profile/profile",
+            "action": "allow",
+            "params": ["id"],
+            "macthing": "exact",
+            "priority": 3
+        },
+        {
+            "page": "*",
+            "action": "allow"
+        }
+    ]
 }

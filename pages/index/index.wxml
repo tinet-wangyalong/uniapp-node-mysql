@@ -1,7 +1,6 @@
 <!--index.wxml-->
-<navigation-bar title="小白的小程序" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
+  <view class="title">
     小白的小程序
   </view>
-</scroll-view>
+
+  <button type="default" bindtap="sayHello">Button</button>
