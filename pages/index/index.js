@@ -3,7 +3,12 @@ Page({
     // 页面初始化
     data: {
         name: "codeMonkey index",
-        age: 100
+        age: 100,
+        isTeacher: true,
+        hobby: ['dunk', 'piece'],
+        friend: {
+            name: 'lala'
+        }
     },
     // 生命周期的监听
     onLoad() {

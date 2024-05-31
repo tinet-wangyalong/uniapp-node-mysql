@@ -1,6 +1,3 @@
-<!--index.wxml-->
-  <view class="title">
-    小白的小程序
-  </view>
-
-  <button type="default" bindtap="sayHello">Button</button>
+<view wx:for="{{name}}">
+  {{item}}
+</view>
